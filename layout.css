@@ -1,0 +1,44 @@
+.study-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+  gap: 18px;
+  align-items: start;
+}
+.study-column {
+  min-width: 0;
+}
+.notes-column {
+  border-left: 1px solid #f0ebef;
+  padding-left: 17px;
+}
+.notes-input {
+  min-height: 470px;
+}
+.pdf-empty {
+  min-height: 470px;
+}
+.pdf-viewer {
+  height: 520px;
+}
+.note-toolbar {
+  min-height: 36px;
+}
+@media (max-width: 850px) {
+  .study-split {
+    grid-template-columns: 1fr;
+  }
+  .notes-column {
+    border-left: 0;
+    border-top: 1px solid #f0ebef;
+    padding: 18px 0 0;
+  }
+  .notes-input {
+    min-height: 300px;
+  }
+  .pdf-empty {
+    min-height: 330px;
+  }
+  .pdf-viewer {
+    height: 400px;
+  }
+}
